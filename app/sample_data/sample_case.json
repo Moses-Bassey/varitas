@@ -1,0 +1,16 @@
+{
+  "notice": "FICTIONAL DEMONSTRATION DATA. Varnholm, its institutions, people and figures are invented for VERITAS sample mode.",
+  "case_id": "sample-varnholm-desalination",
+  "title": "Viral post about the Varnholm desalination plant (fictional)",
+  "query": "Is the new desalination plant destroying Varnholm harbor?",
+  "content": "BREAKING: Varnholm's new desalination plant is DESTROYING the harbor. Since the plant opened in March 2025, fish catches have fallen by 40%. Every fisherman in the city knows the plant is to blame. Either we shut it down now or the harbor dies forever. A leading scientist confirmed the brine is toxic. Electricity bills have risen 12% since the plant began operating, which proves the plant is draining the city's budget. Act now before it's too late.",
+  "memory_fixture": [
+    {
+      "memory_id": "sample-mem-001",
+      "content": "Fictional prior case: a harbor-decline claim in another town omitted a fishing quota change that explained most of the drop.",
+      "source": "sample-fixture:prior-case-017",
+      "relevance": 0.62,
+      "confidence": 0.6
+    }
+  ]
+}

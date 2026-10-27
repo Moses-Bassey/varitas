@@ -1,0 +1,135 @@
+{
+  "notice": "FICTIONAL DEMONSTRATION SOURCES. None of these publishers, documents or URLs exist. They are bundled so sample mode can run offline and deterministically.",
+  "sources": [
+    {
+      "source_id": "sample-src-fisheries-2025",
+      "title": "Varnholm Fisheries Authority: Annual Landings Report 2025 (fictional)",
+      "url": "https://example.org/fictional/varnholm-fisheries-2025",
+      "publisher": "Varnholm Fisheries Authority (fictional)",
+      "published_at": "2025-12-15",
+      "source_kind": "primary",
+      "keywords": ["fish", "catch", "catches", "landings", "harbor", "quota", "fisherman", "fishermen"],
+      "content": "Total landings at Varnholm harbor in 2025 were 38% lower than in 2024. A regional quota reduction of 30% for cod and herring took effect on 1 January 2025, before the desalination plant opened. The authority has not attributed the decline to any single cause.",
+      "assertions": [
+        {
+          "claim_terms": ["fish", "fallen"],
+          "relationship": "supports",
+          "excerpt": "Total landings at Varnholm harbor in 2025 were 38% lower than in 2024.",
+          "basis": "Reports a 38% decline in landings, close to the claimed 40%.",
+          "limitations": ["Measures landings, not total fish population.", "Compares calendar years, not before/after the plant opening date."]
+        },
+        {
+          "claim_terms": ["destroying", "harbor"],
+          "relationship": "contextualizes",
+          "excerpt": "A regional quota reduction of 30% for cod and herring took effect on 1 January 2025, before the desalination plant opened.",
+          "basis": "Documents a quota cut that predates the plant and offers an alternative explanation for lower catches.",
+          "limitations": ["Does not measure harbor ecology."]
+        },
+        {
+          "claim_terms": ["fisherman", "blame"],
+          "relationship": "contextualizes",
+          "excerpt": "The authority has not attributed the decline to any single cause.",
+          "basis": "The responsible authority does not attribute the decline to the plant.",
+          "limitations": ["Silence on attribution is not evidence against the plant's role."]
+        }
+      ]
+    },
+    {
+      "source_id": "sample-src-brine-monitoring",
+      "title": "Regional Environmental Monitoring Office: Brine Outfall Monitoring, Q3 2025 (fictional)",
+      "url": "https://example.org/fictional/brine-outfall-q3-2025",
+      "publisher": "Regional Environmental Monitoring Office (fictional)",
+      "published_at": "2025-10-02",
+      "source_kind": "primary",
+      "keywords": ["brine", "toxic", "salinity", "outfall", "harbor", "desalination"],
+      "content": "Salinity was within permitted limits at all stations more than 150 metres from the outfall. Stations within 50 metres recorded salinity up to 8% above background. No toxic contaminant exceedances were recorded.",
+      "assertions": [
+        {
+          "claim_terms": ["brine", "toxic"],
+          "relationship": "contradicts",
+          "excerpt": "No toxic contaminant exceedances were recorded.",
+          "basis": "Official monitoring recorded no toxic contaminant exceedances, contrary to the claim that the brine is toxic.",
+          "limitations": ["Single quarter of monitoring.", "Elevated salinity near the outfall was observed."]
+        },
+        {
+          "claim_terms": ["destroying", "harbor"],
+          "relationship": "contextualizes",
+          "excerpt": "Stations within 50 metres recorded salinity up to 8% above background.",
+          "basis": "Shows a localized effect near the outfall, not harbor-wide damage.",
+          "limitations": ["Does not assess biological impact."]
+        }
+      ]
+    },
+    {
+      "source_id": "sample-src-energy-tariff",
+      "title": "Varnholm Energy Board: 2025 Tariff Notice (fictional)",
+      "url": "https://example.org/fictional/varnholm-tariff-2025",
+      "publisher": "Varnholm Energy Board (fictional)",
+      "published_at": "2025-03-20",
+      "source_kind": "primary",
+      "keywords": ["electricity", "bills", "tariff", "budget", "energy", "risen", "12%"],
+      "content": "Household electricity tariffs rise 12% from 1 April 2025, driven by wholesale gas prices. The desalination plant accounts for about 2% of city electricity demand. Tariff revenue is separate from the municipal budget.",
+      "assertions": [
+        {
+          "claim_terms": ["electricity", "12%"],
+          "relationship": "supports",
+          "excerpt": "Household electricity tariffs rise 12% from 1 April 2025, driven by wholesale gas prices.",
+          "basis": "Confirms a 12% tariff increase in the stated period.",
+          "limitations": ["Tariff change, not measured household bills."]
+        },
+        {
+          "claim_terms": ["draining", "budget"],
+          "relationship": "contradicts",
+          "excerpt": "The desalination plant accounts for about 2% of city electricity demand. Tariff revenue is separate from the municipal budget.",
+          "basis": "Attributes the increase to gas prices and separates tariffs from the municipal budget, undermining the causal claim.",
+          "limitations": ["Does not report the plant's operating cost to the city."]
+        }
+      ]
+    },
+    {
+      "source_id": "sample-src-coastal-ledger",
+      "title": "Coastal Ledger: Interview with marine biologist Dr. Ilse Maren (fictional)",
+      "url": "https://example.org/fictional/coastal-ledger-maren",
+      "publisher": "Coastal Ledger (fictional)",
+      "published_at": "2025-11-04",
+      "source_kind": "secondary",
+      "keywords": ["scientist", "brine", "toxic", "biologist", "salinity"],
+      "content": "Dr. Ilse Maren said elevated salinity near the outfall warrants monitoring, but that there was no evidence of toxicity at harbor scale. She said she had not described the brine as toxic.",
+      "assertions": [
+        {
+          "claim_terms": ["scientist", "confirmed"],
+          "relationship": "contradicts",
+          "excerpt": "She said she had not described the brine as toxic.",
+          "basis": "The scientist most often quoted on the plant denies making the attributed statement.",
+          "limitations": ["Secondary reporting of an interview.", "The viral post does not name its scientist, so this may be a different person."]
+        }
+      ]
+    },
+    {
+      "source_id": "sample-src-fishers-survey",
+      "title": "Varnholm Fishers' Association Member Survey, 2025 (fictional)",
+      "url": "https://example.org/fictional/fishers-survey-2025",
+      "publisher": "Varnholm Fishers' Association (fictional)",
+      "published_at": "2025-09-12",
+      "source_kind": "secondary",
+      "keywords": ["fisherman", "fishermen", "blame", "survey", "plant"],
+      "content": "Of 212 members surveyed, 61% said they believed the desalination plant contributed to lower catches; 27% cited the quota reduction as the main cause.",
+      "assertions": [
+        {
+          "claim_terms": ["fisherman", "blame"],
+          "relationship": "contradicts",
+          "excerpt": "Of 212 members surveyed, 61% said they believed the desalination plant contributed to lower catches; 27% cited the quota reduction as the main cause.",
+          "basis": "A majority, not every fisherman, blames the plant; over a quarter cite the quota.",
+          "limitations": ["Self-selected association members.", "Measures belief, not cause."]
+        },
+        {
+          "claim_terms": ["destroying", "harbor"],
+          "relationship": "does_not_establish",
+          "excerpt": "61% said they believed the desalination plant contributed to lower catches",
+          "basis": "Opinion survey data cannot establish ecological causation.",
+          "limitations": ["Measures belief, not cause."]
+        }
+      ]
+    }
+  ]
+}

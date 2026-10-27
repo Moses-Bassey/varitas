@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.venv
+venv
+.git
+.gitignore
+logs
+**/__pycache__
+**/*.pyc
+.pytest_cache
+**/node_modules
+engines/hmem-sidecar/data
+tests
+docs
+*.md

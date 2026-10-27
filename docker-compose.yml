@@ -1,0 +1,42 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      HMEM_URL: http://hmem:8787
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - hmem
+
+  hmem:
+    build:
+      context: .
+      dockerfile: engines/hmem-sidecar/Dockerfile
+    environment:
+      HMEM_SIDECAR_TOKEN: ${HMEM_SIDECAR_TOKEN:-}
+    volumes:
+      - hmem-data:/data
+    expose:
+      - "8787"
+
+  dashboard:
+    image: python:3.11-slim
+    working_dir: /ui
+    command: sh -c "pip install -q -r requirements-ui.txt && streamlit run app/ui/dashboard.py --server.address 0.0.0.0 --server.port 8501"
+    environment:
+      VERITAS_API_URL: http://api:8000
+    volumes:
+      - ./app/ui:/ui/app/ui:ro
+      - ./requirements-ui.txt:/ui/requirements-ui.txt:ro
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+
+volumes:
+  hmem-data:

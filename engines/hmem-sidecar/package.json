@@ -1,0 +1,14 @@
+{
+  "name": "veritas-hmem-sidecar",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx server.ts",
+    "conformance": "tsx ../hmem/conformance/runner.ts"
+  },
+  "dependencies": {
+    "tsx": "4.19.2"
+  }
+}
